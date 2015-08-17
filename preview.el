@@ -1,0 +1,10 @@
+(require 'octopress)
+
+  (split-window-vertically)
+  (shell)
+  (toggle-truncate-lines 1)
+  (rename-buffer "Octopress Preview")
+  (insert "rvm use 1.9.3")
+  (comint-send-input)
+  (insert "cd " octopress-workdir)
+  (comint-send-input)
